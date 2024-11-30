@@ -1,73 +1,69 @@
 body {
-    background-color: lightgray;
+    background-color:black;
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0;
     line-height: 1.6;
+    color: white;
 }
   
   h1 {
-    color: white;
     text-align: center;
     margin: 0;
-    padding: 20px;
-    background-color: darkred;
-    border-bottom: 3px solid black;
+    padding: 10px;
+    background-color: gray;
+    border-bottom: 2px solid white;
+    outline: 2px solid white;
 }
 
-ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove default padding */
-    text-align: center; /* Center align the list */
+nav ul {
+    display: flex; /* Makes the <ul> a flex container */
+    justify-content: space-around; /* Spaces items evenly with gaps */
+    list-style: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 20px auto;
+    gap: 10px; /* Adds consistent spacing between items */
 }
 
-li {
-    margin: 10px 0; /* Add spacing between list items */
+nav li {
+    padding: 10px 20px; /* Adds inner spacing to each list item */
+    background-color: lightblue;
+    border-radius: 5px; /* Rounds edges of the list item */
+    text-align: center; /* Centers text inside the list item */
 }
 
-a {
-    text-decoration: none; /* Remove underline from links */
-    color: blue; /* Make the links blue */
-    font-size: 18px; /* Make the links larger */
-    font-weight: bold; /* Make the links bold */
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-a:hover {
-    color: red; /* Change color when hovered */
-    text-decoration: underline; /* Add underline on hover */
+nav a:hover {
+    color: gray; /* Changes color on hover */
+    text-decoration: underline; /* Adds underline on hover */
 }
 
 p.highlight {
     /* Add styles to paragraphs with a specific class */
-    color: darkgreen; /* Change to a calmer color */
+    color: white; /* Change to a calmer color */
     font-size: 18px; /* Adjust font size */
     line-height: 1.8; /* Add more space between lines */
     margin: 20px auto; /* Add space around the paragraph */
     width: 80%; /* Limit the width for better readability */
     text-align: center; /* Center the paragraph text */
+    margin-top:60px;
 }
 
 #footer {
+    display: flex;
+    justify-content: center;
     background-color: darkgrey;
     color: white;
-    text-align: center;
     padding: 20px;
-    margin-top: 30px;
-    font-size:16px;
-    border-top: 4px solid black; /* Separate the header visually */
-}
-
-ul {
-    margin: 20px auto; /* Center the list with balanced spacing */
-}
-
-p {
-    margin: 20px auto; /* Keep paragraph spacing reasonable */
-}
-
-#footer {
-    margin-top: 30px; /* Footer margin is fine as it creates separation */
+    font-size:26px;
+    outline: 2px solid white;
 }
 
 
