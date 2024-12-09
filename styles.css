@@ -20,13 +20,14 @@ body {
 nav ul {
     display: flex; /* Makes the <ul> a flex container */
     justify-content: space-around; /* Spaces items evenly with gaps */
+    flex-direction: column;
     list-style: none; /* Removes default bullet points */
     padding: 0; /* Removes default padding */
     margin: 20px auto;
     gap: 10px; /* Adds consistent spacing between items */
 }
 
-nav li {
+nav li{
     padding: 10px 20px; /* Adds inner spacing to each list item */
     background-color: lightblue;
     border-radius: 5px; /* Rounds edges of the list item */
@@ -64,7 +65,8 @@ p.highlight {
     padding: 20px;
     font-size:26px;
     outline: 2px solid white;
-}
+    flex-shrink:0;
+} 
 
 
 
